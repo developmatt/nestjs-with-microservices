@@ -1,0 +1,65 @@
+#Saving a new category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Category 1"
+}
+###
+
+#Get all categories
+GET http://localhost:3000/categories
+
+###
+#Get category by id
+GET http://localhost:3000/categories/40
+
+###
+#Update category by id
+PATCH http://localhost:3000/categories/3
+Content-Type: application/json
+
+{
+  "name": "Category 3"
+}
+
+###
+#Delete category by id
+DELETE http://localhost:3000/categories/30
+###
+
+
+
+
+
+#Saving a new product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Product 2",
+  "price": 10,
+  "categoryId": 4
+}
+###
+
+#Get all products
+GET http://localhost:3000/products
+
+###
+#Get product by id
+GET http://localhost:3000/products/3
+
+###
+#Update product by id
+PATCH http://localhost:3000/products/3
+Content-Type: application/json
+
+{
+  "name": "Product 3"
+}
+
+###
+#Delete product by id
+DELETE http://localhost:3000/products/3
